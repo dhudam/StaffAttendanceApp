@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.google.devtools.ksp'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -59,7 +59,7 @@ dependencies {
     // Room Database
     implementation 'androidx.room:room-runtime:2.6.1'
     implementation 'androidx.room:room-ktx:2.6.1'
-    ksp 'androidx.room:room-compiler:2.6.1'
+    kapt 'androidx.room:room-compiler:2.6.1'
 
     // Biometric
     implementation 'androidx.biometric:biometric:1.1.0'
@@ -84,7 +84,10 @@ dependencies {
 
     // Glide (image loading for employee photos)
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    ksp 'com.github.bumptech.glide:ksp:4.16.0'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // Google Play Services - Location (GPS / FusedLocationProviderClient)
+    implementation 'com.google.android.gms:play-services-location:21.2.0'
 
     // RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
