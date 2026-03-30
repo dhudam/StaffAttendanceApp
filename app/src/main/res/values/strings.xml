@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Staff Attendance</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_attendance">Attendance</string>
+    <string name="nav_employees">Employees</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_leave">Leave</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="select_employee">Select Employee</string>
+    <string name="biometric_title">Biometric Authentication</string>
+    <string name="biometric_subtitle">Confirm your identity to mark attendance</string>
+    <string name="export_csv">Export CSV Report</string>
+    <string name="admin_pin_hint">Enter Admin PIN</string>
+    <string name="wrong_pin">Wrong PIN entered</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/surface_dark"
+    app:cardElevation="4dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="12dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <TextView android:id="@+id/tvLeaveType" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:textSize="15sp"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:id="@+id/tvStatus"
+                android:textColor="#FFFFFF" android:textSize="11sp"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvDates" android:textColor="@color/primary"
+            android:textSize="12sp" android:layout_marginBottom="2dp"/>
+        <TextView android:id="@+id/tvReason" android:textColor="@color/text_secondary"
+            android:textSize="12sp" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btnApprove"
+                android:layout_width="0dp" android:layout_height="36dp"
+                android:layout_weight="1" android:text="Approve" android:textSize="12sp"
+                android:backgroundTint="@color/card_green" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnReject"
+                android:layout_width="0dp" android:layout_height="36dp"
+                android:layout_weight="1" android:text="Reject" android:textSize="12sp"
+                android:backgroundTint="#C62828"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <TextView android:text="Attendance Reports" android:textSize="22sp" android:textStyle="bold"
+        android:textColor="@color/text_primary" android:layout_marginBottom="16dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <Button android:id="@+id/btnPickFrom" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="From Date" android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/surface_dark"/>
+        <Button android:id="@+id/btnPickTo" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="To Date"
+            app:backgroundTint="@color/surface_dark"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="20dp">
+        <TextView android:text="From: " android:textColor="@color/text_secondary"/>
+        <TextView android:id="@+id/tvFromDate" android:textColor="@color/primary" android:text="--"/>
+        <TextView android:text="  To: " android:textColor="@color/text_secondary"/>
+        <TextView android:id="@+id/tvToDate" android:textColor="@color/primary" android:text="--"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnExport"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:text="Export CSV Report" android:textSize="16sp"
+        app:backgroundTint="@color/primary"/>
+
+</LinearLayout>

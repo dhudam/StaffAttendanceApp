@@ -1,0 +1,24 @@
+# Built outputs
+app/build/
+build/
+*.apk
+*.aab
+
+# Gradle cache
+.gradle/
+**/.gradle/
+local.properties
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android keystore (never commit!)
+*.jks
+*.keystore
+
+# OS files
+.DS_Store
+Thumbs.db

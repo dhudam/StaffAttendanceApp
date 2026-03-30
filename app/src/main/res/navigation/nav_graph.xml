@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment android:id="@+id/dashboardFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment android:id="@+id/markAttendanceFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.MarkAttendanceFragment"
+        android:label="Mark Attendance" />
+
+    <fragment android:id="@+id/employeeListFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.EmployeeListFragment"
+        android:label="Employees">
+        <action android:id="@+id/action_employees_to_addEdit"
+            app:destination="@id/addEditEmployeeFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/addEditEmployeeFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.AddEditEmployeeFragment"
+        android:label="Add / Edit Employee">
+        <argument android:name="employeeId"
+            app:argType="long"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment android:id="@+id/reportsFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.ReportsFragment"
+        android:label="Reports" />
+
+    <fragment android:id="@+id/leaveFragment"
+        android:name="com.vatsalya.staffattendance.ui.fragment.LeaveFragment"
+        android:label="Leave" />
+
+</navigation>

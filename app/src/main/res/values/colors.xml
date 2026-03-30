@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+
+    <!-- Brand -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_variant">#4A43C6</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Stat Cards -->
+    <color name="card_purple">#6C63FF</color>
+    <color name="card_green">#2E7D32</color>
+    <color name="card_orange">#E65100</color>
+    <color name="card_blue">#1565C0</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AAAAAA</color>
+
+    <!-- Navigation -->
+    <color name="nav_selected">#6C63FF</color>
+    <color name="nav_unselected">#888888</color>
+</resources>
